@@ -5,21 +5,21 @@ import Homepage from "./Pages/Homepage";
 import { makeStyles } from "@material-ui/core"
 import CoinPage from "./Pages/CoinPage";
 
+  const useStyles = makeStyles(() => ({
+  App: {
+    backgroundColor: "#0A0F13",
+    color: "#5C038C",
+    minHeight: "100vh",
+  },
+}));
+
 function App() {
 
-  const useStyles = makeStyles (() => ({
-    App: {
-      backgroundColor: "#192E41",
-      color: "black",
-      minHeight: "100vh",
-    }
-  }))
-
-  const classes = useStyles
+  const classes = useStyles();
 
   return (
     <BrowserRouter>
-      <div className="classes.App">
+      <div className={classes.App}>
         <Header />
         <Routes>
           <Route exact path="/" element={<Homepage />} />
