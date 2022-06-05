@@ -22,8 +22,8 @@ function App() {
       <div className="classes.App">
         <Header />
         <Routes>
-          <Route  path="/" component={<Homepage />}  />
-          <Route exact path="/coin/:id" component={<CoinPage />} />
+          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/coin/:id" element={<CoinPage />} />
         </Routes>
       </div>
     </BrowserRouter>
