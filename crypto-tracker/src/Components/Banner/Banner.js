@@ -1,6 +1,7 @@
  import { Container, makeStyles, Typography } from '@material-ui/core'
 import {  } from '@material-ui/styles'
 import React from 'react'
+import SlideThrough from './SlideThrough'
  
 const useStyles = makeStyles(() => ({
     banner: {
@@ -35,19 +36,22 @@ const useStyles = makeStyles(() => ({
                 fontWeight: "bold",
                 marginBottom: 15,
                 fontFamily: "Ubuntu",
+                color: "white",
             }}>
                 TrackChain
             </Typography>
             <Typography variant="subtitle2" style={{
-                color: "darkgrey",
+                color: "white",
                 textTransform: "capitalize",
                 fontFamily: "Ubuntu",
+                fontWeight: "bold",
             }}
             >
                 Live and updated information on the Crypto coins!
             </Typography>
 
             </div>
+            <SlideThrough />
          </Container>
          
     </div>
