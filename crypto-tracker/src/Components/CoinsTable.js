@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@material-ui/core';
 
 
-
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -78,7 +77,7 @@ export default function  CoinsTable() {
         <TableContainer>
            {
              loading ? (
-                <LinearProgress style={{ backgroundColor: "gold"}}/>
+                <LinearProgress style={{ backgroundColor: "blue"}}/>
              ) : (
                <Table>
                  <TableHead>
@@ -105,8 +104,6 @@ export default function  CoinsTable() {
                     return (
                       <TableRow
                         onClick={() => history.push(`/coins/${row.id}`)}
-                        className={classes.row}
-                        key={row.name}
                       >
                         <TableCell
                           component="th"
